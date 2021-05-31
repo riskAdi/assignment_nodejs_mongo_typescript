@@ -22,4 +22,5 @@ docker-compose up -d
 
 ```bash
 After 1 hour cron job will run and mongodb will fill wht fresh data from API https://kiosks.bicycletransit.workers.dev/phl
+Then you can test from postman, .env has valid token for authorization
 ```
