@@ -9,18 +9,17 @@
 
 ```bash
 Firt, you need to install Docker in your machine.
-docker-compose up -d
-After 1 hour cron job will run and mongodb will fill wht fresh data from API https://kiosks.bicycletransit.workers.dev/phl
+
 ```
 
 ## Running
 
 ```bash
-npm run dev
+docker-compose up -d
 ```
 
 ## Testing
 
 ```bash
-npm run test
+After 1 hour cron job will run and mongodb will fill wht fresh data from API https://kiosks.bicycletransit.workers.dev/phl
 ```
