@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "89bee277-f45d-4257-8700-2b554bc0bf3f",
+		"name": "Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "stations/:id",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8800/api/v1/stations/3004?at=2021-05-30T18:30:00",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"v1",
+						"stations",
+						"3004"
+					],
+					"query": [
+						{
+							"key": "at",
+							"value": "2021-05-30T18:30:00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "stations",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8800/api/v1/stations?at=2020-05-30T18:30:00",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"v1",
+						"stations"
+					],
+					"query": [
+						{
+							"key": "at",
+							"value": "2020-05-30T18:30:00"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

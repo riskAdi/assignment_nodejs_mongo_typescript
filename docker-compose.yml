@@ -1,0 +1,35 @@
+
+version: "3"
+services:
+  node:
+    build: .
+    restart: unless-stopped
+    ports:
+      - 8800:8800
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    networks:
+      - insurance
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    environment:
+    - MONGO_INITDB_ROOT_USERNAME=${MONGO_USER}
+    - MONGO_INITDB_ROOT_PASSWORD=${MONGO_PASSWORD}
+    volumes:
+      - "mongo_db:/data/db"
+    networks:
+      - insurance
+    
+networks:
+  insurance:
+    driver: bridge
+volumes:
+  mongo_db:
+    driver: local
+
