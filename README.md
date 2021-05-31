@@ -3,19 +3,14 @@
 </p>
 
 ## Description
-
-This repository is a part of the [Express Typescript tutorial](https://wanago.io/courses/typescript-express-tutorial/).
-
-Each part of the course has its own branch, called for example [_part-1_](https://github.com/mwanago/express-typescript/tree/part-1).
-
-The the [_master_](https://github.com/mwanago/express-typescript) branch represents the version with **MongoDB**.
-
-The [_postgres_](https://github.com/mwanago/express-typescript/tree/postgres) branch contains the version with **PostgreSQL**.
+ 
 
 ## Installation
 
 ```bash
-npm install
+Firt, you need to install Docker in your machine.
+docker-compose up -d
+After 1 hour cron job will run and mongodb will fill wht fresh data from API https://kiosks.bicycletransit.workers.dev/phl
 ```
 
 ## Running
